@@ -9,67 +9,67 @@ export function Navigation() {
   
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <nav className="bg-gradient-glass backdrop-blur-md border-b border-accent-gold/20">
+      <nav className="bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <div className="text-2xl font-display font-bold bg-gradient-text bg-clip-text text-transparent">
-                Debt Capital Chronicles
+              <div className="text-2xl font-bold text-foreground">
+                Republic
               </div>
             </Link>
             
             {/* Navigation Links */}
-            <div className="hidden md:flex items-center space-x-2">
+            <div className="hidden md:flex items-center space-x-1">
               <Link 
                 to="/" 
-                className={`px-4 py-2 rounded-xl transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${
                   isActive('/') 
-                    ? 'bg-gradient-accent text-accent-foreground shadow-glow' 
-                    : 'text-muted-foreground hover:text-accent-cream hover:bg-white/10'
+                    ? 'bg-primary text-primary-foreground' 
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
                 Home
               </Link>
               <Link 
                 to="/analysis" 
-                className={`px-4 py-2 rounded-xl transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${
                   isActive('/analysis') 
-                    ? 'bg-gradient-accent text-accent-foreground shadow-glow' 
-                    : 'text-muted-foreground hover:text-accent-cream hover:bg-white/10'
+                    ? 'bg-primary text-primary-foreground' 
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                Credit Analysis
+                Market Analysis
               </Link>
               <Link 
                 to="/events" 
-                className={`px-4 py-2 rounded-xl transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${
                   isActive('/events') 
-                    ? 'bg-gradient-accent text-accent-foreground shadow-glow' 
-                    : 'text-muted-foreground hover:text-accent-cream hover:bg-white/10'
+                    ? 'bg-primary text-primary-foreground' 
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                Market Events
+                Key Events
               </Link>
               <Link 
                 to="/key-deals" 
-                className={`px-4 py-2 rounded-xl transition-all duration-300 ${
+                className={`px-4 py-2 rounded-lg transition-all duration-200 ${
                   isActive('/key-deals') 
-                    ? 'bg-gradient-accent text-accent-foreground shadow-glow' 
-                    : 'text-muted-foreground hover:text-accent-cream hover:bg-white/10'
+                    ? 'bg-primary text-primary-foreground' 
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                Key Deals
+                Investment Deals
               </Link>
             </div>
             
-            {/* CTA Button */}
-            <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="hidden md:inline-flex text-muted-foreground hover:text-accent-cream hover:bg-white/10">
+            {/* CTA Buttons */}
+            <div className="flex items-center space-x-3">
+              <Button variant="ghost" className="hidden md:inline-flex text-muted-foreground hover:text-foreground">
                 Sign In
               </Button>
-              <Button className="bg-gradient-button hover:shadow-gold text-accent-foreground font-semibold transition-all duration-300 hover:scale-105 rounded-xl">
-                Access Intelligence
+              <Button className="bg-gradient-button-blue hover:shadow-lg text-white font-medium transition-all duration-300 hover:scale-105">
+                Get Started
               </Button>
             </div>
           </div>

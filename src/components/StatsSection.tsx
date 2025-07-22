@@ -7,9 +7,11 @@ interface StatItemProps {
   prefix?: string
   suffix?: string
   delay?: number
+  bgColor?: string
+  textColor?: string
 }
 
-function StatItem({ value, label, prefix = "", suffix = "", delay = 0 }: StatItemProps) {
+function StatItem({ value, label, prefix = "", suffix = "", delay = 0, bgColor = "bg-accent-blue/10", textColor = "text-accent-blue" }: StatItemProps) {
   const [currentValue, setCurrentValue] = useState(0)
   const numericValue = parseInt(value.replace(/[^\d]/g, ''))
   
@@ -37,65 +39,69 @@ function StatItem({ value, label, prefix = "", suffix = "", delay = 0 }: StatIte
   
   const formatValue = (val: number) => {
     if (val >= 1000) {
-      return `${prefix}${(val / 1000).toFixed(1)}T${suffix}`
+      return `${prefix}${(val / 1000).toFixed(1)}K${suffix}`
     }
     return `${prefix}${val}${suffix}`
   }
   
   return (
-    <div className="text-center animate-counter">
-      <div className="text-4xl md:text-5xl font-display font-bold bg-gradient-text bg-clip-text text-transparent mb-2">
+    <div className={`text-center p-8 rounded-2xl ${bgColor} transition-transform duration-300 hover:scale-105 animate-counter`}>
+      <div className={`text-4xl md:text-5xl font-bold ${textColor} mb-2`}>
         {numericValue >= 1000 ? formatValue(currentValue) : `${prefix}${currentValue}${suffix}`}
       </div>
-      <div className="text-muted-foreground font-medium">{label}</div>
+      <div className="text-muted-foreground font-medium text-lg">{label}</div>
     </div>
   )
 }
 
 export function StatsSection() {
   return (
-    <section className="py-32 bg-gradient-hero relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-1/3 w-72 h-72 bg-gradient-radial from-accent-gold/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-1/3 w-64 h-64 bg-gradient-radial from-accent-muted-gold/20 to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-      </div>
-      
+    <section className="py-24 bg-muted/30 relative overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-accent-cream mb-6">
-            Market Intelligence
-            <span className="block bg-gradient-text bg-clip-text text-transparent">
-              by the Numbers
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Trusted by Investors
+            <span className="block bg-gradient-button-blue bg-clip-text text-transparent">
+              Worldwide
             </span>
           </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Join thousands of professionals making smarter investment decisions with our platform.
+          </p>
         </div>
         
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <StatItem 
-            value="2400" 
-            label="Private Debt AUM Tracked"
-            prefix="$"
-            suffix="B+"
+            value="50" 
+            label="Markets Tracked"
+            suffix="+"
             delay={0}
+            bgColor="bg-accent-blue/10"
+            textColor="text-accent-blue"
           />
           <StatItem 
-            value="8900" 
-            label="Credit Deals Analyzed"
+            value="25000" 
+            label="Active Users"
             suffix="+"
             delay={200}
+            bgColor="bg-accent-orange/10"
+            textColor="text-accent-orange"
           />
           <StatItem 
-            value="450" 
-            label="Direct Lenders"
+            value="1000" 
+            label="Daily Reports"
             suffix="+"
             delay={400}
+            bgColor="bg-accent-pink/10"
+            textColor="text-accent-pink"
           />
           <StatItem 
-            value="97" 
-            label="Data Accuracy"
+            value="99" 
+            label="Uptime"
             suffix="%"
             delay={600}
+            bgColor="bg-accent-green/10"
+            textColor="text-accent-green"
           />
         </div>
       </div>

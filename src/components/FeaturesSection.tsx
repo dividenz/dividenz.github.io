@@ -4,64 +4,70 @@ import { TrendingUp, Search, BarChart3, Building2, Target, Activity } from "luci
 
 const features = [
   {
-    icon: Search,
-    title: "Strategy Insights",
-    description: "Deep dive into hedge fund strategies, positioning, and systematic approaches across all major market segments.",
-    color: "text-accent-blue"
-  },
-  {
     icon: TrendingUp,
-    title: "Market Intelligence",
-    description: "Real-time analysis of fund moves, market impact, and emerging opportunities in the hedge fund landscape.",
-    color: "text-accent-success"
+    title: "Market Trends Analysis",
+    description: "Real-time analysis of market movements, identifying patterns and forecasting future trends with advanced analytics.",
+    gradient: "bg-accent-blue/10",
+    iconColor: "text-accent-blue"
   },
   {
-    icon: Building2,
-    title: "Performance Analytics",
-    description: "Track fund performance, risk metrics, alpha generation, and comprehensive benchmarking analysis.",
-    color: "text-accent-purple"
+    icon: Search,
+    title: "Investment Opportunities",
+    description: "Discover undervalued assets and emerging market opportunities with our AI-powered screening tools.",
+    gradient: "bg-accent-orange/10",
+    iconColor: "text-accent-orange"
   },
   {
     icon: BarChart3,
-    title: "Position Tracking",
-    description: "Monitor key holdings, portfolio changes, and strategic shifts across institutional hedge fund portfolios.",
-    color: "text-accent-cyan"
+    title: "Performance Analytics",
+    description: "Track portfolio performance, risk metrics, and benchmark comparisons with comprehensive reporting.",
+    gradient: "bg-accent-pink/10",
+    iconColor: "text-accent-pink"
+  },
+  {
+    icon: Building2,
+    title: "Sector Intelligence",
+    description: "Deep insights into specific sectors, industry trends, and company fundamentals driving market movements.",
+    gradient: "bg-accent-green/10",
+    iconColor: "text-accent-green"
   },
   {
     icon: Target,
-    title: "Risk Analysis",
-    description: "Comprehensive risk assessment, stress testing, and volatility modeling for informed decision making.",
-    color: "text-accent-blue"
+    title: "Risk Assessment",
+    description: "Advanced risk modeling and stress testing to help you make informed investment decisions.",
+    gradient: "bg-accent-blue/10",
+    iconColor: "text-accent-blue"
   },
   {
     icon: Activity,
-    title: "Alpha Opportunities",
-    description: "Identify emerging opportunities, market inefficiencies, and systematic alpha generation strategies.",
-    color: "text-accent-success"
+    title: "Real-time Data",
+    description: "Live market data, news feeds, and economic indicators to keep you ahead of market movements.",
+    gradient: "bg-accent-orange/10",
+    iconColor: "text-accent-orange"
   }
 ]
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-32 bg-gradient-hero relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-radial from-accent-purple/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-gradient-radial from-accent-cyan/15 to-transparent rounded-full blur-3xl"></div>
+    <section id="features" className="py-24 bg-white relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-1/4 w-32 h-32 bg-accent-blue rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/4 w-40 h-40 bg-accent-orange rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Intelligence That 
-            <span className="block bg-gradient-text bg-clip-text text-transparent">
-              Moves Markets
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Everything You Need for
+            <span className="block bg-gradient-button-blue bg-clip-text text-transparent">
+              Smart Investing
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive hedge fund intelligence platform providing the insights you need 
-            to stay ahead in a competitive market.
+            Comprehensive tools and insights to help you make informed investment decisions 
+            in today's complex financial markets.
           </p>
         </div>
         
@@ -72,19 +78,19 @@ export function FeaturesSection() {
             return (
               <Card 
                 key={feature.title}
-                className="group hover:shadow-lift transition-all duration-500 hover:-translate-y-2 bg-gradient-glass backdrop-blur-sm border border-accent-purple/20 hover:border-accent-cyan/40 rounded-2xl"
+                className="group hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2 bg-white border border-border rounded-2xl animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-xl bg-gradient-accent flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className={`w-6 h-6 ${feature.color}`} />
+                <CardHeader className="pb-4">
+                  <div className={`w-12 h-12 rounded-xl ${feature.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <Icon className={`w-6 h-6 ${feature.iconColor}`} />
                   </div>
-                  <CardTitle className="text-xl font-semibold text-white">
+                  <CardTitle className="text-xl font-semibold text-foreground">
                     {feature.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
+                  <CardDescription className="text-muted-foreground leading-relaxed text-base">
                     {feature.description}
                   </CardDescription>
                 </CardContent>
@@ -94,10 +100,10 @@ export function FeaturesSection() {
         </div>
         
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-glass backdrop-blur-sm border border-accent-purple/30">
+        <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <div className="inline-flex items-center px-6 py-3 rounded-full bg-muted border border-border">
             <span className="text-sm text-muted-foreground">
-              And much more with our comprehensive hedge fund analytics suite
+              Plus many more features to power your investment strategy
             </span>
           </div>
         </div>
