@@ -46,7 +46,7 @@ interface CarouselMetric {
 
 export default function Admin() {
   const [articles, setArticles] = useState<Article[]>([
-    { id: 1, title: "Private Equity Market Outlook 2024", category: "Market Trends", author: "Sarah Chen", status: "published", featured: true, createdAt: "2024-01-15", views: 1250 },
+    { id: 1, title: "Public Equity Market Outlook 2024", category: "Market Trends", author: "Sarah Chen", status: "published", featured: true, createdAt: "2024-01-15", views: 1250 },
     { id: 2, title: "ESG Integration in PE Investments", category: "Key Deals", author: "Michael Rodriguez", status: "published", featured: false, createdAt: "2024-01-12", views: 890 },
     { id: 3, title: "Tech Sector M&A Analysis", category: "Analysis", author: "David Kim", status: "draft", featured: false, createdAt: "2024-01-10", views: 0 }
   ])
@@ -445,7 +445,7 @@ export default function Admin() {
                   <Label htmlFor="siteDescription">Site Description</Label>
                   <Textarea 
                     id="siteDescription" 
-                    defaultValue="The premier private equity intelligence platform providing deep insights on transactions, market trends, and firm strategies."
+                    defaultValue="The premier public markets intelligence platform providing deep insights on equity trends, sector analysis, and investment strategies."
                   />
                 </div>
 

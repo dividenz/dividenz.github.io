@@ -94,10 +94,10 @@ export function DebtIntelligenceChat() {
         <div className="flex flex-col items-center w-full max-w-4xl mx-auto p-4 space-y-8">
             <div className="text-center space-y-4">
                 <h2 className="text-3xl md:text-4xl font-display font-bold text-accent-cream">
-                    Private Debt Intelligence Platform
+                    Public Markets Intelligence Platform
                 </h2>
                 <p className="text-muted-foreground text-lg max-w-2xl">
-                    Get institutional-grade insights on credit markets, direct lending opportunities, portfolio risk assessment, and industry benchmarking
+                    Get institutional-grade insights on equity markets, sector analysis, economic indicators, and investment opportunities
                 </p>
             </div>
 
@@ -112,7 +112,7 @@ export function DebtIntelligenceChat() {
                                 adjustHeight();
                             }}
                             onKeyDown={handleKeyDown}
-                            placeholder="Ask about credit spreads, direct lending opportunities, portfolio risk metrics..."
+                            placeholder="Ask about market trends, sector performance, economic indicators, investment strategies..."
                             className={cn(
                                 "w-full px-4 py-3",
                                 "resize-none",
@@ -176,23 +176,23 @@ export function DebtIntelligenceChat() {
                 <div className="flex items-center justify-center gap-3 mt-4 flex-wrap">
                     <ActionButton
                         icon={<TrendingUp className="w-4 h-4" />}
-                        label="Credit Analysis"
+                        label="Market Analysis"
                     />
                     <ActionButton
                         icon={<DollarSign className="w-4 h-4" />}
-                        label="Direct Lending"
+                        label="Equity Research"
                     />
                     <ActionButton
                         icon={<BarChart3 className="w-4 h-4" />}
-                        label="Risk Assessment"
+                        label="Sector Insights"
                     />
                     <ActionButton
                         icon={<Building2 className="w-4 h-4" />}
-                        label="Portfolio Analysis"
+                        label="Economic Data"
                     />
                     <ActionButton
                         icon={<Activity className="w-4 h-4" />}
-                        label="Market Intelligence"
+                        label="Investment Themes"
                     />
                 </div>
             </div>

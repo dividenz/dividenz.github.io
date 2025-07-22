@@ -25,9 +25,9 @@ interface Article {
 const articles: Article[] = [
   {
     id: '1',
-    category: 'Credit Analysis',
-    title: 'Direct Lending Yields Reach 5-Year Highs Amid Rate Environment',
-    excerpt: 'Private credit managers achieve 14.2% gross yields as floating-rate structures benefit from higher base rates.',
+    category: 'Market Analysis',
+    title: 'Equity Markets Rally on Strong Earnings Growth',
+    excerpt: 'S&P 500 companies deliver 12.4% earnings growth as tech sector leads broad market expansion.',
     author: 'Sarah Mitchell',
     publishedAt: 'Jan 15, 2024',
     readTime: '5 min read',
@@ -35,27 +35,27 @@ const articles: Article[] = [
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
     heroImage: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
     content: `
-      <p>Direct lending funds have achieved their highest gross yields in five years, with top-tier managers reporting average gross portfolio yields of 14.2% as of Q4 2023.</p>
+      <p>The S&P 500 delivered robust earnings growth of 12.4% in Q4 2023, marking the strongest quarterly performance in two years as technology and healthcare sectors outpaced expectations.</p>
       
-      <h3>Yield Enhancement Drivers</h3>
-      <p>The current rate environment has proven highly favorable for private credit strategies employing floating-rate structures. With SOFR + spreads now averaging 11-13% for middle-market direct lending, managers are capturing significant yield expansion from the Federal Reserve's rate hiking cycle.</p>
+      <h3>Sector Performance Leaders</h3>
+      <p>Technology companies led earnings expansion with 18.7% growth, driven by AI adoption and cloud infrastructure demand. Mega-cap tech stocks including Apple, Microsoft, and Google parent Alphabet exceeded analyst forecasts by an average of 8.2%.</p>
       
-      <p>Credit spreads have remained relatively stable at 550-650 basis points for traditional middle-market loans, while base rates provide the primary yield enhancement mechanism.</p>
+      <p>Healthcare and consumer discretionary sectors also showed strong performance, with earnings growth of 14.1% and 11.8% respectively, reflecting economic resilience and consumer spending strength.</p>
       
-      <h3>Risk-Adjusted Performance</h3>
-      <p>Net returns after fees are averaging 11.8% across the asset class, substantially outperforming high-yield bonds (8.4%) and leveraged loans (9.1%) on a risk-adjusted basis. Default rates remain manageable at 1.2% by number of companies.</p>
+      <h3>Market Valuation Metrics</h3>
+      <p>Despite the earnings growth, market valuations remain reasonable with the S&P 500 trading at 18.4x forward earnings, below the 10-year average of 19.2x. This suggests continued upside potential if earnings momentum sustains.</p>
       
-      <p>The illiquidity premium embedded in private credit continues to provide attractive compensation for patient capital, with institutional investors extending average hold periods to 4-5 years.</p>
+      <p>Small-cap stocks have shown particular value appeal, trading at 14.8x forward earnings compared to their historical average of 16.5x, presenting attractive opportunities for long-term investors.</p>
       
-      <h3>Market Outlook</h3>
-      <p>Looking ahead, managers expect yields to remain elevated through 2024, particularly for new vintages. However, credit selection and underwriting discipline will become increasingly important as economic uncertainty persists.</p>
+      <h3>Economic Outlook</h3>
+      <p>Analysts project continued earnings growth of 8-10% for 2024, supported by controlled inflation, stable employment, and sustained consumer spending. However, geopolitical risks and interest rate uncertainties remain key monitoring factors.</p>
     `
   },
   {
     id: '2',
     category: 'Market Trends',
-    title: 'Infrastructure Debt Emerges as Institutional Favorite',
-    excerpt: 'Long-duration infrastructure financing attracts pension funds seeking liability-matching assets with ESG benefits.',
+    title: 'ESG Investment Flows Reach Record $2.3 Trillion',
+    excerpt: 'Sustainable investing accelerates as institutional investors prioritize climate and social impact metrics.',
     author: 'Michael Torres',
     publishedAt: 'Jan 14, 2024',
     readTime: '4 min read',
@@ -63,27 +63,27 @@ const articles: Article[] = [
     image: 'https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a',
     heroImage: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625',
     content: `
-      <p>Infrastructure debt has emerged as a preferred allocation among pension funds and insurance companies seeking long-duration assets that match their liability profiles while providing inflation protection.</p>
+      <p>Global ESG investment flows reached a record $2.3 trillion in 2023, as institutional investors increasingly integrate environmental, social, and governance factors into their portfolio strategies.</p>
       
-      <h3>Allocation Trends</h3>
-      <p>Institutional investors allocated $47 billion to infrastructure debt strategies in 2023, representing a 35% increase from the previous year. Pension funds led this growth, with allocations averaging 8-12% of alternatives portfolios.</p>
+      <h3>Institutional Adoption</h3>
+      <p>Pension funds and insurance companies led ESG adoption, with 87% now incorporating sustainability metrics into investment decisions. Asset managers report that ESG mandates represent 35% of new institutional RFPs.</p>
       
-      <p>The asset class offers attractive characteristics including predictable cash flows, inflation linkage, and tenor matching for long-term liabilities extending 15-30 years.</p>
+      <p>The shift reflects both regulatory requirements and growing recognition that ESG factors materially impact long-term investment returns and risk management.</p>
       
-      <h3>ESG Integration</h3>
-      <p>Renewable energy infrastructure represents 60% of new deployments, aligning with institutional ESG mandates. Solar, wind, and battery storage projects offer compelling risk-adjusted returns with strong regulatory support.</p>
+      <h3>Performance Impact</h3>
+      <p>ESG-focused funds have demonstrated competitive risk-adjusted returns, with the MSCI KLD 400 Social Index outperforming the S&P 500 by 1.2% annually over the past five years.</p>
       
-      <p>Green infrastructure debt provides additional benefits through sustainability-linked pricing and regulatory incentives, enhancing total returns while meeting ESG objectives.</p>
+      <p>Climate-focused strategies have shown particular strength, benefiting from the energy transition and regulatory support for clean technology investments.</p>
       
-      <h3>Risk Considerations</h3>
-      <p>While infrastructure debt offers stability, managers must navigate construction risk, regulatory changes, and technology obsolescence. Successful strategies emphasize operational assets with established cash flows and creditworthy counterparties.</p>
+      <h3>Future Outlook</h3>
+      <p>Regulatory frameworks continue evolving, with new disclosure requirements driving increased transparency. Investors expect ESG integration to become standard practice rather than a specialized strategy within the next five years.</p>
     `
   },
   {
     id: '3',
     category: 'Regulatory Impact',
-    title: 'Basel III Endgame Drives Bank Lending Retreat',
-    excerpt: 'Proposed banking regulations accelerate shift from traditional bank lending to private credit markets.',
+    title: 'SEC Climate Disclosure Rules Transform Reporting',
+    excerpt: 'New climate risk disclosure requirements reshape how public companies communicate environmental impact.',
     author: 'Emma Johnson',
     publishedAt: 'Jan 13, 2024',
     readTime: '6 min read',
@@ -91,29 +91,29 @@ const articles: Article[] = [
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
     heroImage: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21',
     content: `
-      <p>The proposed Basel III Endgame regulations are accelerating the structural shift from traditional bank lending to private credit markets, creating unprecedented opportunities for direct lending managers.</p>
+      <p>The SEC's new climate disclosure rules are fundamentally changing how public companies report environmental risks and opportunities, creating new standards for transparency and accountability.</p>
       
-      <h3>Regulatory Catalyst</h3>
-      <p>New capital requirements will increase the cost of bank lending to middle-market companies by an estimated 20-30%, making private credit increasingly competitive. Regional banks, traditionally active in middle-market lending, face the greatest pressure.</p>
+      <h3>Regulatory Framework</h3>
+      <p>Large public companies must now disclose material climate risks, greenhouse gas emissions, and climate transition plans in their annual reports. The phased implementation begins with large accelerated filers in 2024.</p>
       
-      <p>Risk-weighted asset calculations under the new framework particularly impact leveraged lending and real estate financing, core areas where private credit provides alternative solutions.</p>
+      <p>Scope 1 and 2 emissions reporting becomes mandatory for companies exceeding $700 million in revenue, with third-party assurance required for the largest filers starting in 2026.</p>
       
-      <h3>Market Displacement</h3>
-      <p>We estimate $200-300 billion in lending capacity will migrate from banks to private credit over the next 3-5 years. This represents a structural tailwind for the asset class, potentially doubling the addressable market.</p>
+      <h3>Market Impact</h3>
+      <p>Early compliance leaders are seeing improved access to ESG-focused capital, with sustainability-linked financing terms becoming more favorable. Companies with robust climate strategies report 15-20% lower borrowing costs.</p>
       
-      <p>Companies previously reliant on bank relationships are increasingly viewing private credit as a primary financing source rather than alternative capital.</p>
+      <p>The disclosure requirements are driving increased investment in climate risk assessment tools and sustainability management systems, creating opportunities in the climate technology sector.</p>
       
-      <h3>Competitive Dynamics</h3>
-      <p>The regulatory-driven market share shift benefits established private credit managers with scale, operational infrastructure, and established origination capabilities. First-mover advantage in relationship capture will prove crucial.</p>
+      <h3>Investment Implications</h3>
+      <p>Enhanced disclosure is improving investor ability to assess climate risks and opportunities, leading to more efficient capital allocation toward sustainable business models.</p>
       
-      <p>We expect pricing power to improve as supply constraints emerge, potentially expanding net spreads by 50-100 basis points over the medium term.</p>
+      <p>We expect continued convergence between financial and sustainability reporting, with climate metrics becoming as standardized as traditional financial KPIs within five years.</p>
     `
   },
   {
     id: '4',
     category: 'Technology Sector',
-    title: 'Software-as-a-Service Lending Reaches New Sophistication',
-    excerpt: 'Private credit managers develop specialized underwriting for recurring revenue business models.',
+    title: 'AI Transformation Drives Tech Sector Revaluation',
+    excerpt: 'Artificial intelligence adoption accelerates across industries, creating new investment opportunities and valuation metrics.',
     author: 'Jennifer Chen',
     publishedAt: 'Jan 15, 2024',
     readTime: '6 min read',
@@ -121,29 +121,29 @@ const articles: Article[] = [
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
     heroImage: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7',
     content: `
-      <p>Private credit managers are developing increasingly sophisticated approaches to Software-as-a-Service (SaaS) company financing, recognizing the unique cash flow characteristics and growth dynamics of recurring revenue models.</p>
+      <p>The artificial intelligence revolution is reshaping technology sector valuations as companies across industries integrate AI capabilities into their core business models and operations.</p>
       
-      <h3>Specialized Underwriting</h3>
-      <p>Leading managers now employ SaaS-specific metrics including Annual Recurring Revenue (ARR), Customer Acquisition Cost (CAC), and Net Revenue Retention in credit analysis. These metrics provide better predictive power than traditional financial statements for subscription-based businesses.</p>
+      <h3>Market Leadership</h3>
+      <p>AI-focused companies have generated exceptional returns, with the sector growing 47% in 2023 compared to the broader tech index's 28% gain. Leading AI chipmakers, software platforms, and cloud infrastructure providers have seen their valuations expand significantly.</p>
       
-      <p>Covenant structures have evolved to reflect SaaS business models, emphasizing ARR growth rates, customer concentration, and churn metrics rather than traditional leverage ratios.</p>
+      <p>Enterprise adoption is accelerating, with 73% of Fortune 500 companies now implementing AI solutions across operations, customer service, and decision-making processes.</p>
       
-      <h3>Attractive Fundamentals</h3>
-      <p>SaaS companies offer compelling credit characteristics including predictable cash flows, high gross margins (typically 75-85%), and strong customer retention. Default rates among established SaaS borrowers remain below 1%.</p>
+      <h3>Investment Themes</h3>
+      <p>Infrastructure providers supporting AI workloads show strong fundamentals, including data center operators, semiconductor manufacturers, and cloud computing platforms. These companies benefit from sustained capital expenditure cycles.</p>
       
-      <p>The asset-light nature of SaaS businesses requires enhanced focus on management quality, market positioning, and competitive moats in credit decisions.</p>
+      <p>AI software applications are creating new SaaS categories with higher pricing power and customer retention rates compared to traditional enterprise software.</p>
       
-      <h3>Market Opportunity</h3>
-      <p>The SaaS lending market has grown to $12 billion annually, with private credit capturing increasing share from traditional banks lacking specialized expertise. Successful managers report 200-300 basis points higher spreads compared to traditional industries.</p>
+      <h3>Valuation Evolution</h3>
+      <p>Traditional technology valuation metrics are evolving to incorporate AI capabilities, data assets, and compute efficiency. Revenue multiples for AI-native companies trade at 30-50% premiums to traditional software peers.</p>
       
-      <p>Growth capital financing for SaaS companies represents a particular opportunity, combining moderate leverage with strong growth prospects and exit potential.</p>
+      <p>Investors are focusing on sustainable competitive advantages, including proprietary datasets, model performance, and integration depth rather than just revenue growth rates.</p>
     `
   },
   {
     id: '5',
-    category: 'Healthcare Finance',
-    title: 'Healthcare Real Estate Debt Gains Institutional Favor',
-    excerpt: 'Medical office and senior housing debt provides defensive characteristics with demographic tailwinds.',
+    category: 'Healthcare Sector',
+    title: 'Biotech Innovation Drives Healthcare Market Expansion',
+    excerpt: 'Breakthrough therapies and precision medicine advances create new investment opportunities in healthcare markets.',
     author: 'David Kim',
     publishedAt: 'Jan 12, 2024',
     readTime: '5 min read',
@@ -151,29 +151,29 @@ const articles: Article[] = [
     image: 'https://images.unsplash.com/photo-1458668383970-8ddd3927deed',
     heroImage: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843',
     content: `
-      <p>Healthcare real estate debt has emerged as a favored allocation among institutional investors seeking defensive characteristics and demographic-driven growth in an uncertain economic environment.</p>
+      <p>The healthcare sector is experiencing unprecedented innovation, with breakthrough biotechnology companies developing revolutionary treatments that are reshaping market dynamics and creating substantial investment opportunities.</p>
       
-      <h3>Sector Fundamentals</h3>
-      <p>Medical office buildings and senior housing properties benefit from aging demographics, with the 65+ population growing 3.2% annually through 2030. These properties typically feature long-term leases with healthcare operators and strong location barriers to entry.</p>
+      <h3>Innovation Pipeline</h3>
+      <p>Gene and cell therapy platforms are advancing rapidly, with over 200 clinical trials currently underway. FDA approvals for novel treatment modalities increased 35% in 2023, including breakthrough designations for cancer immunotherapies and rare disease treatments.</p>
       
-      <p>Occupancy rates for quality healthcare real estate remain elevated at 92-95%, providing stable cash flows for debt investors even during economic downturns.</p>
+      <p>Precision medicine approaches are enabling targeted therapies with superior efficacy and safety profiles, commanding premium pricing and generating strong intellectual property moats.</p>
       
-      <h3>Credit Profile</h3>
-      <p>Healthcare real estate debt offers attractive risk-adjusted returns with gross yields averaging 8-11% depending on property type and leverage. Medical office properties anchored by hospital systems provide particularly stable cash flows.</p>
+      <h3>Market Dynamics</h3>
+      <p>Healthcare spending continues growing at 4-5% annually, driven by aging demographics and increased access to innovative treatments. Specialty pharmaceutical markets are expanding particularly rapidly, with orphan drug revenues growing 12% year-over-year.</p>
       
-      <p>Senior housing represents higher yields (11-14%) but requires specialized underwriting of operator quality, local market dynamics, and regulatory environment.</p>
+      <p>Digital health integration is improving treatment outcomes and reducing costs, creating opportunities for healthcare technology companies and data analytics platforms.</p>
       
-      <h3>ESG Alignment</h3>
-      <p>Healthcare real estate financing aligns with institutional ESG objectives by supporting critical community infrastructure. Many properties incorporate sustainability features and serve essential social needs.</p>
+      <h3>Investment Outlook</h3>
+      <p>Biotech valuations have become more attractive following the 2022-2023 correction, with quality companies trading at reasonable multiples relative to their innovation potential and market opportunities.</p>
       
-      <p>The defensive nature and social impact of healthcare real estate make it an attractive allocation for pension funds and insurance companies with long-term liability profiles.</p>
+      <p>Partnerships between large pharmaceutical companies and biotech innovators are increasing, providing validation and capital for breakthrough therapies while creating multiple pathways to value realization.</p>
     `
   },
   {
     id: '6',
-    category: 'Market Analysis',
-    title: 'Private Credit Secondary Markets Show Growing Liquidity',
-    excerpt: 'Institutional demand for private credit secondaries reaches $15 billion as asset class matures.',
+    category: 'Global Markets',
+    title: 'Emerging Markets Equity Rally Gains Momentum',
+    excerpt: 'Chinese stimulus measures and improved global trade dynamics drive emerging markets outperformance.',
     author: 'Robert Johnson',
     publishedAt: 'Jan 16, 2024',
     readTime: '4 min read',
@@ -181,34 +181,34 @@ const articles: Article[] = [
     image: 'https://images.unsplash.com/photo-1493397212122-2b85dda8106b',
     heroImage: 'https://images.unsplash.com/photo-1492321936769-b49830bc1d1e',
     content: `
-      <p>The private credit secondary market has reached unprecedented scale with $15 billion in transaction volume in 2023, providing new liquidity options for institutional investors seeking portfolio optimization.</p>
+      <p>Emerging markets equities are experiencing their strongest rally in three years, with the MSCI Emerging Markets Index gaining 18.7% year-to-date as policy stimulus and improved sentiment drive capital flows.</p>
       
-      <h3>Market Development</h3>
-      <p>Secondary transactions now occur across the credit spectrum, from direct lending fund interests to individual loan assets. Pricing has become more efficient with dedicated secondary teams at major asset managers providing market making capabilities.</p>
+      <h3>Regional Performance</h3>
+      <p>Chinese markets lead the rally with Shanghai Composite and Hang Seng indices posting gains exceeding 20%. Government stimulus measures including monetary easing and fiscal support are boosting investor confidence in the world's second-largest economy.</p>
       
-      <p>Institutional sellers increasingly use secondaries for portfolio rebalancing rather than distressed exits, contributing to more stable pricing and transaction flow.</p>
+      <p>India continues showing strong fundamentals with GDP growth exceeding 6%, while Latin American markets benefit from commodity price strength and political stability improvements.</p>
       
-      <h3>Buyer Dynamics</h3>
-      <p>Secondary buyers include traditional private equity funds, specialized secondary managers, and increasingly, pension funds seeking direct exposure to seasoned portfolios. Pricing typically ranges from 85-95% of net asset value depending on vintage and manager quality.</p>
+      <h3>Capital Flow Dynamics</h3>
+      <p>Foreign investment flows into emerging market equities reached $47 billion in Q4 2023, the largest quarterly inflow since 2021. The rotation reflects attractive valuations and improving economic fundamentals relative to developed markets.</p>
       
-      <p>The maturation of secondary markets provides institutional investors with enhanced liquidity management tools while maintaining exposure to private credit returns.</p>
+      <p>Currency stability across major emerging market economies is supporting investor confidence, with central banks maintaining adequate foreign exchange reserves and implementing prudent monetary policies.</p>
       
-      <h3>Implications</h3>
-      <p>Growing secondary liquidity reduces the illiquidity premium required by institutional investors, potentially lowering overall cost of capital for private credit strategies while maintaining return profiles.</p>
+      <h3>Investment Outlook</h3>
+      <p>Emerging markets trade at attractive valuations with price-to-earnings ratios 25% below developed market averages. Structural growth drivers including demographic trends, infrastructure development, and technology adoption support long-term investment prospects.</p>
       
-      <p>We expect secondary market growth to accelerate as institutional allocations mature and regulatory frameworks evolve to accommodate private market liquidity solutions.</p>
+      <p>Selective opportunities exist across sectors, particularly in consumer discretionary, technology, and renewable energy companies benefiting from urbanization and energy transition trends.</p>
     `
   }
 ];
 
 const categories = [
   { name: 'All', icon: Newspaper },
-  { name: 'Credit Analysis', icon: TrendingUp },
+  { name: 'Market Analysis', icon: TrendingUp },
   { name: 'Market Trends', icon: Target },
   { name: 'Regulatory Impact', icon: Briefcase },
   { name: 'Technology Sector', icon: Users },
-  { name: 'Healthcare Finance', icon: FileText },
-  { name: 'Market Analysis', icon: Newspaper }
+  { name: 'Healthcare Sector', icon: FileText },
+  { name: 'Global Markets', icon: Newspaper }
 ];
 
 export default function Analysis() {
@@ -262,14 +262,14 @@ export default function Analysis() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-8 leading-tight">
-              Credit Market
+              Market
               <span className="block bg-gradient-text bg-clip-text text-transparent">
                 Analysis
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-accent-platinum mb-12 leading-relaxed">
-              Deep insights into private debt markets, credit strategies, and industry trends 
-              shaping the institutional investing landscape.
+              Deep insights into public markets, sector trends, and investment opportunities 
+              shaping the global financial landscape.
             </p>
           </div>
         </div>
