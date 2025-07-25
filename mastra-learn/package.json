@@ -1,0 +1,22 @@
+{
+  "name": "mastra-learn",
+  "version": "1.0.0",
+  "description": "A minimal starter for experimenting with Mastra.ai agent framework.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.23",
+    "@mastra/core": "^0.11.1",
+    "@mastra/mcp": "^0.10.7",
+    "mastra": "latest",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}
